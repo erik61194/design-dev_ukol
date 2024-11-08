@@ -1,0 +1,31 @@
+@use "../functions" as *;
+@use "../media-queries" as *;
+@use "../colors" as *;
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  background: $color-secondary;
+  min-height: rem(46);
+
+  @media screen and (min-width: $lg) {
+    min-height: rem(56);
+  }
+
+  &__wrapper {
+    text-align: center;
+    padding: rem(18) 0;
+  }
+
+  &__wrapper p {
+    font-size: rem(12);
+    font-weight: 600;
+    line-height: 1.2;
+
+    @media screen and (min-width: $lg) {
+      font-size: rem(16);
+    }
+  }
+}

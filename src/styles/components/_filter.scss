@@ -1,0 +1,113 @@
+@use "../functions" as *;
+@use "../colors" as *;
+@use "../media-queries" as *;
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(40);
+
+  &__wrapper {
+    border-radius: 14px;
+    //border: 1px solid #15151533;
+
+    @media screen and (min-width: $sm) {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #15151533;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: rem(14);
+    font-weight: 500;
+    line-height: 1.25;
+    color: $text-color-dark;
+    min-height: rem(30);
+    padding: rem(10) rem(50);
+    text-decoration: none;
+    border-radius: 14px;
+    border: 1px solid #15151533;
+    outline-offset: 2px;
+    cursor: pointer;
+
+    @media screen and (min-width: $sm) {
+      font-size: rem(16);
+      min-height: rem(40);
+      border: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      width: 0;
+      height: calc(100% + 2px);
+      background: $button-secondary-bg;
+      background: $button-secondary-bg-gradient;
+      z-index: 2;
+      border-radius: 14px;
+    }
+
+    span {
+      position: relative;
+      z-index: 3;
+    }
+
+    &:active {
+      color: $text-color-light;
+      outline: 1px dashed $color-primary;
+      transition: color 0.1s linear 0.2s;
+
+      &::before {
+        width: calc(100% + 1px);
+        transition: width 0.2s ease-in-out;
+      }
+    }
+
+    &:focus:not(:active) {
+      color: $text-color-light;
+      outline: 1px dashed $color-primary;
+      transition: color 0.1s linear 0.2s;
+
+      &::before {
+        width: calc(100% + 1px);
+        transition: width 0.2s ease-in-out;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $text-color-light;
+        transition: all 0.1s linear 0.2s;
+      }
+
+      &:hover::before {
+        width: calc(100% + 1px);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &--active {
+      color: $text-color-light;
+
+      &::before {
+        width: calc(100% + 1px);
+      }
+    }
+  }
+
+  &__button:not(:last-child) {
+    margin-bottom: rem(4);
+
+    @media screen and (min-width: $sm) {
+      margin-right: rem(4);
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Vendors
+
+// Components
+@use "./components/filter";
+@use "./components/banner";
+@use "./components/product-card-skeleton";
+@use "./components/product-card";
+
+// Layout
+@use "./layout/container";
+
+//Pages
+@use "./pages/shop";
+
+@use "app";

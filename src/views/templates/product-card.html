@@ -1,0 +1,1038 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Product card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Raleway:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{assets}}/styles/main.css" />
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" lang="cs" content="Product card" />
+
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="{{assets}}/img/favicon/android-chrome-192x192.png"
+    />
+
+    <!-- for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Product card" />
+    <!-- for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Product card" />
+
+    <meta name="theme-color" content="#52b480" />
+
+    <link rel="shortcut icon" href="{{assets}}/img/favicons/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{assets}}/img/favicons/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{assets}}/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="{{assets}}/img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="{{assets}}/img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="{{assets}}/img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="{{assets}}/img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="{{assets}}/img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="{{assets}}/img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="{{assets}}/img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="{{assets}}/img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="{{assets}}/img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{assets}}/img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="{{assets}}/img/favicons/apple-touch-icon-1024x1024.png"
+    />
+
+    <!-- Seo  -->
+    <meta name="description" content="Ukol pro designdev" />
+    <meta property="og:locale" content="cs_CS" />
+    <meta property="og:image" content="{{assets}}/img/op/open_graph.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Product card" />
+    <meta property="og:description" content="Product card" />
+    <meta property="og:url" content="https://designdev-ukol.netlify.app/" />
+    <meta property="og:site_name" content="Product card" />
+  </head>
+  <body>
+    <!--  Demo html start -->
+    <div style="text-align: center; padding: 64px 24px">
+      <h1 style="font-size: 24px">Demo ukol pro www.designdev.cz</h1>
+    </div>
+    <!--  Demo html end -->
+    <div class="shop">
+      <!-- Shop header start -->
+      <header class="shop__header">
+        <div class="container">
+          <!-- Title start -->
+          <h2 class="shop__title">Static</h2>
+          <!-- Title end -->
+        </div>
+
+        <!-- Filter start -->
+        <div class="filter js-filter">
+          <div class="container">
+            <div class="filter__wrapper">
+              <!-- Button start -->
+              <a class="filter__button filter__button--active" href="#">
+                <span>For Dogs</span>
+              </a>
+              <!-- Button end -->
+
+              <!-- Button start -->
+              <a class="filter__button" href="#">
+                <span>For Humans</span>
+              </a>
+              <!-- Button end -->
+            </div>
+          </div>
+        </div>
+        <!-- Filter end -->
+
+        <!-- Banner start -->
+        <div class="banner">
+          <div class="container">
+            <div class="banner__wrapper">
+              <p>Buy multiples original canine or human products</p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner end -->
+      </header>
+      <!-- Shop header end -->
+
+      <!-- Shop main start -->
+      <main class="shop__main">
+        <!-- Product listing start -->
+        <div class="shop__listing">
+          <div class="container">
+            <!-- Product listing grid start -->
+            <div class="shop__listing-grid">
+              <!-- Product card start -->
+              <article
+                class="product-card"
+                itemscope
+                itemtype="http://schema.org/Product"
+              >
+                <!-- Img start -->
+                <div class="product-card__img">
+                  <a
+                    href="https://designdev.cz/"
+                    class="product-card__img-link"
+                  >
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="assets/img/product-card/product-1.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="assets/img/product-card/product-1.webp"
+                      />
+                      <img
+                        src="assets/img/product-card/product-1.png"
+                        loading="lazy"
+                        alt="Product name"
+                        title="Product name"
+                        width="278"
+                        height="278"
+                        itemprop="image"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <!-- Img end -->
+
+                <!-- Info start -->
+                <div class="product-card__info">
+                  <!-- Title start -->
+                  <h3 class="product-card__title" itemprop="name">
+                    <a
+                      href="https://designdev.cz/"
+                      class="product-card__title-link"
+                      >Product name</a
+                    >
+                  </h3>
+                  <!-- Title end -->
+
+                  <!-- Description start -->
+                  <p class="product-card__description" itemprop="description">
+                    Subtitle with basic ingredients...
+                  </p>
+                  <!-- Description end -->
+
+                  <!-- Rating start -->
+                  <div
+                    class="product-card__rating"
+                    itemscope
+                    itemtype="http://schema.org/AggregateRating"
+                  >
+                    <a
+                      href="https://designdev.cz#rating-section"
+                      class="product-card__rating-grid"
+                      aria-label="Rating of 4.8 out of 5"
+                    >
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="#dfdfdf"
+                        />
+                      </svg>
+                    </a>
+                    <span
+                      class="product-card__rating-rate"
+                      itemprop="ratingValue"
+                      >4.8</span
+                    >
+                    <meta itemprop="bestRating" content="5" />
+                    <meta itemprop="ratingCount" content="12" />
+                  </div>
+                  <!-- Rating end -->
+
+                  <!-- Reviews start -->
+                  <div class="product-card__reviews">
+                    <a
+                      href="https://designdev.cz#review-section"
+                      class="product-card__reviews-link"
+                      itemprop="reviewCount"
+                      >12 reviews</a
+                    >
+                  </div>
+                  <!-- Reviews end -->
+
+                  <!-- Price start -->
+                  <div class="product-card__price">
+                    <strong
+                      itemprop="offers"
+                      itemscope
+                      itemtype="http://schema.org/Offer"
+                    >
+                      <span itemprop="priceCurrency" content="USD">$</span>
+                      <span itemprop="price" content="49.90">49.90</span>
+                    </strong>
+                  </div>
+                  <!-- Price end -->
+
+                  <!-- Cta start -->
+                  <div class="product-card__cta">
+                    <button type="button" class="product-card__cta-button">
+                      Add to Cart
+                    </button>
+                  </div>
+                  <!-- Cta end -->
+                </div>
+                <!-- Info end -->
+              </article>
+              <!-- Product card end -->
+
+              <!-- Product card start -->
+              <article
+                class="product-card"
+                itemscope
+                itemtype="http://schema.org/Product"
+              >
+                <!-- Img start -->
+                <div class="product-card__img">
+                  <a
+                    href="https://designdev.cz/"
+                    class="product-card__img-link"
+                  >
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="assets/img/product-card/product-2.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="assets/img/product-card/product-2.webp"
+                      />
+                      <img
+                        src="assets/img/product-card/product-2.png"
+                        loading="lazy"
+                        alt="Product name"
+                        title="Product name"
+                        width="278"
+                        height="278"
+                        itemprop="image"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <!-- Img end -->
+
+                <!-- Info start -->
+                <div class="product-card__info">
+                  <!-- Title start -->
+                  <h3 class="product-card__title" itemprop="name">
+                    <a
+                      href="https://designdev.cz/"
+                      class="product-card__title-link"
+                      >Product name</a
+                    >
+                  </h3>
+                  <!-- Title end -->
+
+                  <!-- Description start -->
+                  <p class="product-card__description" itemprop="description">
+                    Subtitle with basic ingredients...
+                  </p>
+                  <!-- Description end -->
+
+                  <!-- Rating start -->
+                  <div
+                    class="product-card__rating"
+                    itemscope
+                    itemtype="http://schema.org/AggregateRating"
+                  >
+                    <a
+                      href="https://designdev.cz#rating-section"
+                      class="product-card__rating-grid"
+                      aria-label="Rating of 4.8 out of 5"
+                    >
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="#dfdfdf"
+                        />
+                      </svg>
+                    </a>
+                    <span
+                      class="product-card__rating-rate"
+                      itemprop="ratingValue"
+                      >4.8</span
+                    >
+                    <meta itemprop="bestRating" content="5" />
+                    <meta itemprop="ratingCount" content="12" />
+                  </div>
+                  <!-- Rating end -->
+
+                  <!-- Reviews start -->
+                  <div class="product-card__reviews">
+                    <a
+                      href="https://designdev.cz#review-section"
+                      class="product-card__reviews-link"
+                      itemprop="reviewCount"
+                      >12 reviews</a
+                    >
+                  </div>
+                  <!-- Reviews end -->
+
+                  <!-- Price start -->
+                  <div class="product-card__price">
+                    <strong
+                      itemprop="offers"
+                      itemscope
+                      itemtype="http://schema.org/Offer"
+                    >
+                      <span itemprop="priceCurrency" content="USD">$</span>
+                      <span itemprop="price" content="49.90">49.90</span>
+                    </strong>
+                  </div>
+                  <!-- Price end -->
+
+                  <!-- Cta start -->
+                  <div class="product-card__cta">
+                    <button type="button" class="product-card__cta-button">
+                      Add to Cart
+                    </button>
+                  </div>
+                  <!-- Cta end -->
+                </div>
+                <!-- Info end -->
+              </article>
+              <!-- Product card end -->
+
+              <!-- Product card start -->
+              <article
+                class="product-card"
+                itemscope
+                itemtype="http://schema.org/Product"
+              >
+                <!-- Img start -->
+                <div class="product-card__img">
+                  <a
+                    href="https://designdev.cz/"
+                    class="product-card__img-link"
+                  >
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="assets/img/product-card/product-1.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="assets/img/product-card/product-1.webp"
+                      />
+                      <img
+                        src="assets/img/product-card/product-1.png"
+                        loading="lazy"
+                        alt="Product name"
+                        title="Product name"
+                        width="278"
+                        height="278"
+                        itemprop="image"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <!-- Img end -->
+
+                <!-- Info start -->
+                <div class="product-card__info">
+                  <!-- Title start -->
+                  <h3 class="product-card__title" itemprop="name">
+                    <a
+                      href="https://designdev.cz/"
+                      class="product-card__title-link"
+                      >Product name</a
+                    >
+                  </h3>
+                  <!-- Title end -->
+
+                  <!-- Description start -->
+                  <p class="product-card__description" itemprop="description">
+                    Subtitle with basic ingredients...
+                  </p>
+                  <!-- Description end -->
+
+                  <!-- Rating start -->
+                  <div
+                    class="product-card__rating"
+                    itemscope
+                    itemtype="http://schema.org/AggregateRating"
+                  >
+                    <a
+                      href="https://designdev.cz#rating-section"
+                      class="product-card__rating-grid"
+                      aria-label="Rating of 4.8 out of 5"
+                    >
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="#dfdfdf"
+                        />
+                      </svg>
+                    </a>
+                    <span
+                      class="product-card__rating-rate"
+                      itemprop="ratingValue"
+                      >4.8</span
+                    >
+                    <meta itemprop="bestRating" content="5" />
+                    <meta itemprop="ratingCount" content="12" />
+                  </div>
+                  <!-- Rating end -->
+
+                  <!-- Reviews start -->
+                  <div class="product-card__reviews">
+                    <a
+                      href="https://designdev.cz#review-section"
+                      class="product-card__reviews-link"
+                      itemprop="reviewCount"
+                      >12 reviews</a
+                    >
+                  </div>
+                  <!-- Reviews end -->
+
+                  <!-- Price start -->
+                  <div class="product-card__price">
+                    <strong
+                      itemprop="offers"
+                      itemscope
+                      itemtype="http://schema.org/Offer"
+                    >
+                      <span itemprop="priceCurrency" content="USD">$</span>
+                      <span itemprop="price" content="49.90">49.90</span>
+                    </strong>
+                  </div>
+                  <!-- Price end -->
+
+                  <!-- Cta start -->
+                  <div class="product-card__cta">
+                    <button type="button" class="product-card__cta-button">
+                      Add to Cart
+                    </button>
+                  </div>
+                  <!-- Cta end -->
+                </div>
+                <!-- Info end -->
+              </article>
+              <!-- Product card end -->
+
+              <!-- Product card start -->
+              <article
+                class="product-card"
+                itemscope
+                itemtype="http://schema.org/Product"
+              >
+                <!-- Img start -->
+                <div class="product-card__img">
+                  <a
+                    href="https://designdev.cz/"
+                    class="product-card__img-link"
+                  >
+                    <picture>
+                      <source
+                        type="image/avif"
+                        srcset="assets/img/product-card/product-1.avif"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="assets/img/product-card/product-1.webp"
+                      />
+                      <img
+                        src="assets/img/product-card/product-1.png"
+                        loading="lazy"
+                        alt="Product name"
+                        title="Product name"
+                        width="278"
+                        height="278"
+                        itemprop="image"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <!-- Img end -->
+
+                <!-- Info start -->
+                <div class="product-card__info">
+                  <!-- Title start -->
+                  <h3 class="product-card__title" itemprop="name">
+                    <a
+                      href="https://designdev.cz/"
+                      class="product-card__title-link"
+                      >Product name</a
+                    >
+                  </h3>
+                  <!-- Title end -->
+
+                  <!-- Description start -->
+                  <p class="product-card__description" itemprop="description">
+                    Subtitle with basic ingredients...
+                  </p>
+                  <!-- Description end -->
+
+                  <!-- Rating start -->
+                  <div
+                    class="product-card__rating"
+                    itemscope
+                    itemtype="http://schema.org/AggregateRating"
+                  >
+                    <a
+                      href="https://designdev.cz#rating-section"
+                      class="product-card__rating-grid"
+                      aria-label="Rating of 4.8 out of 5"
+                    >
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+
+                      <svg
+                        width="18"
+                        height="19"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="product-card__rating-star"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 21.825L6.12962 26.2305C5.75732 26.4389 5.31184 26.1153 5.39498 25.6968L7.15252 16.85L0.529667 10.726C0.216401 10.4363 0.38654 9.91258 0.810238 9.86233L9.76752 8.8L13.546 0.609201C13.7247 0.221792 14.2753 0.221791 14.454 0.609201L18.2325 8.8L27.1898 9.86233C27.6135 9.91258 27.7836 10.4363 27.4704 10.726L20.8475 16.85L22.6051 25.6968C22.6882 26.1153 22.2427 26.4389 21.8704 26.2305L14 21.825Z"
+                          fill="#dfdfdf"
+                        />
+                      </svg>
+                    </a>
+                    <span
+                      class="product-card__rating-rate"
+                      itemprop="ratingValue"
+                      >4.8</span
+                    >
+                    <meta itemprop="bestRating" content="5" />
+                    <meta itemprop="ratingCount" content="12" />
+                  </div>
+                  <!-- Rating end -->
+
+                  <!-- Reviews start -->
+                  <div class="product-card__reviews">
+                    <a
+                      href="https://designdev.cz#review-section"
+                      class="product-card__reviews-link"
+                      itemprop="reviewCount"
+                      >12 reviews</a
+                    >
+                  </div>
+                  <!-- Reviews end -->
+
+                  <!-- Price start -->
+                  <div class="product-card__price">
+                    <strong
+                      itemprop="offers"
+                      itemscope
+                      itemtype="http://schema.org/Offer"
+                    >
+                      <span itemprop="priceCurrency" content="USD">$</span>
+                      <span itemprop="price" content="49.90">49.90</span>
+                    </strong>
+                  </div>
+                  <!-- Price end -->
+
+                  <!-- Cta start -->
+                  <div class="product-card__cta">
+                    <button type="button" class="product-card__cta-button">
+                      Add to Cart
+                    </button>
+                  </div>
+                  <!-- Cta end -->
+                </div>
+                <!-- Info end -->
+              </article>
+              <!-- Product card end -->
+
+              <!-- Product card skeleton start -->
+              <div class="product-card-skeleton">
+                <div class="product-card-skeleton__img">
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 18"
+                    width="40"
+                    height="36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="product-card-skeleton__info">
+                  <span class="product-card-skeleton__title"></span>
+                  <span class="product-card-skeleton__description"></span>
+                  <span class="product-card-skeleton__rating"></span>
+                  <span class="product-card-skeleton__review"></span>
+                  <span class="product-card-skeleton__price"></span>
+                  <span class="product-card-skeleton__button"></span>
+                </div>
+              </div>
+              <!-- Product card skeleton end -->
+
+              <!-- Product card skeleton start -->
+              <div class="product-card-skeleton">
+                <div class="product-card-skeleton__img">
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 18"
+                    width="40"
+                    height="36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="product-card-skeleton__info">
+                  <span class="product-card-skeleton__title"></span>
+                  <span class="product-card-skeleton__description"></span>
+                  <span class="product-card-skeleton__rating"></span>
+                  <span class="product-card-skeleton__review"></span>
+                  <span class="product-card-skeleton__price"></span>
+                  <span class="product-card-skeleton__button"></span>
+                </div>
+              </div>
+              <!-- Product card skeleton end -->
+
+              <!-- Product card skeleton start -->
+              <div class="product-card-skeleton">
+                <div class="product-card-skeleton__img">
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 18"
+                    width="40"
+                    height="36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="product-card-skeleton__info">
+                  <span class="product-card-skeleton__title"></span>
+                  <span class="product-card-skeleton__description"></span>
+                  <span class="product-card-skeleton__rating"></span>
+                  <span class="product-card-skeleton__review"></span>
+                  <span class="product-card-skeleton__price"></span>
+                  <span class="product-card-skeleton__button"></span>
+                </div>
+              </div>
+              <!-- Product card skeleton end -->
+
+              <!-- Product card skeleton start -->
+              <div class="product-card-skeleton">
+                <div class="product-card-skeleton__img">
+                  <svg
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 18"
+                    width="40"
+                    height="36"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="product-card-skeleton__info">
+                  <span class="product-card-skeleton__title"></span>
+                  <span class="product-card-skeleton__description"></span>
+                  <span class="product-card-skeleton__rating"></span>
+                  <span class="product-card-skeleton__review"></span>
+                  <span class="product-card-skeleton__price"></span>
+                  <span class="product-card-skeleton__button"></span>
+                </div>
+              </div>
+              <!-- Product card skeleton end -->
+            </div>
+            <!-- Product listing grid end -->
+          </div>
+        </div>
+        <!-- Product listing end -->
+      </main>
+      <!-- Shop main end -->
+    </div>
+
+    <script defer src="{{assets}}/js/main.js"></script>
+  </body>
+</html>

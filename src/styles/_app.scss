@@ -1,0 +1,65 @@
+@forward "reset";
+@use "colors" as *;
+// Selection
+
+//*::selection {
+//  color: #ffffff;
+//  background: $secondary-color;
+//}
+
+// Default style
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.2;
+  color: $text-color-dark;
+  background: #ffffff;
+  padding: 48px 0; // Style for demo
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+strong,
+b {
+  font-weight: 700;
+}

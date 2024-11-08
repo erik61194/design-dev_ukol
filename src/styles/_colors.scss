@@ -1,0 +1,28 @@
+// Colors
+$color-primary: #52b480;
+$color-secondary: #ffe55a;
+
+// Text colors
+$text-color-dark: #151515;
+$text-color-light: #ffffff;
+
+// Button colors
+// Primary button
+$button-primary-bg: $color-primary;
+$button-primary-bg-gradient: radial-gradient(
+  100% 246.25% at 100% 50%,
+  #b1ca52 0%,
+  #418241 100%
+);
+
+// Secondary button
+$button-secondary-bg: $color-secondary;
+$button-secondary-bg-gradient: radial-gradient(
+  100% 513.85% at 0% 66.67%,
+  #f89446 0%,
+  #f5b730 100%
+);
+
+//Others demo colors
+$skeleton-bg-light: #efeff1;
+$skeleton-bg-dark: #dcdbdb;
